@@ -54,8 +54,8 @@ ul, li {
     align-items: center;
 
     max-width: 100%;
-    height: 100vh;
-    padding: 40px 0 70px;
+    max-height: 100vh;
+    padding: 40px 30px 70px;
 
     background: #000 url('../img/bg.jpg') center no-repeat;
     background-size: cover;
@@ -100,6 +100,7 @@ ul, li {
 }
 
 .header__navbar {
+    max-height: 65px;
     margin-bottom: 60px;
     border-bottom: 1px solid #e6e6e6;
 }
@@ -125,15 +126,14 @@ ul, li {
 }
 
 .header__logo--black {
-    margin: auto;
+    margin-right: auto;
 }
 
 .header__nav {
-    padding-left: 30px;
-
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    column-gap: 10px;
 }
 
 .header__nav-link {
@@ -258,7 +258,6 @@ ul, li {
 .services__header {
     margin-bottom: 80px;
 
-    height: 40px;
     display: flex;
     column-gap: 20px;
     align-items: center;
@@ -318,13 +317,16 @@ ul, li {
 
 .services__content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 30px;
 }
 
 .services__item {
     padding: 40px 25px;
-    width: 30%;
+    width: 295px;
 
     border: 1px solid #e6e6e6;
 }
@@ -371,22 +373,26 @@ ul, li {
     width: 100%;
     margin: 0 auto;
     padding: 30px 0;
-    height: 100px;
 
     background-color: #000;
 
 }
 
+.newsletter__right {
+    justify-content: flex-end;
+}
+
 .form__group {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 70px;
     align-items: center;
     justify-content: center;
 }
 
 .form__label {
-    margin-right: 70px;
-
     display: inline-block;
     font-size: 22px;
     color: #fff;
@@ -421,10 +427,13 @@ ul, li {
 
     display: flex;
     justify-content: space-between;
+    column-gap: 60px;
 }
 
 .footer__company {
-    width: 250px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__title {
@@ -448,17 +457,16 @@ ul, li {
 
 .footer__row {
     display: flex;
-
+    column-gap: 30px;
 }
 
 .footer__nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
     list-style: none;
-    margin-right: 34px;
 }
 
-.footer__nav li {
-    margin-bottom: 15px;
-}
 
 .footer__nav-link {
     display: block;
@@ -474,16 +482,15 @@ ul, li {
 }
 
 .footer__nav-link.footer__nav-link--sm {
-    font-size: 11px;
     font-weight: 400;
     text-transform: lowercase;
 }
 
 .social {
-    width: 90px;
     display: flex;
     margin-top: 35px;
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 .social__link {
@@ -515,7 +522,35 @@ ul, li {
 }
 
 
+@media screen and (max-width: 800px) {
+    .footer__company {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 650px) {
+.services__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 25px;
+
+}
+
+.services__title:after {
+    margin: 10px auto 0;
+}
+
+.form__group{
+    flex-direction: column;
+}
+
+.footer__row {
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+}
 
 
 

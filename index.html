@@ -16,10 +16,10 @@
 <div class="page">
     <header class="header">
         <div class="header__intro">
-            <img src="img/projeco-logo.png" alt="logo" class="header__logo  header__logo--black">
-            <h1 class="header__title">PARTNER WITH KONSTUCT</h1>
+            <img src="img/projeco-logo.png" alt="logo" class="header__logo">
+            <h1 class="header__title text-center">PARTNER WITH KONSTRUCT</h1>
             <h2 class="header__subtitle">An award-winning construction management firm</h2>
-            <div class="header__text">
+            <div class="header__text text-center">
                 SCROLL DOWN
             </div>
 
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="header__inner">
                     <div class="header__left">
-                        <img src="img/projeco-logo-black.png" alt="logo">
+                        <img class="header__logo header__logo--black" src="img/projeco-logo-black.png" alt="logo">
                     </div>
                     <div class="header__right">
                         <nav class="header__nav">
@@ -122,14 +122,20 @@
         <button class="btn" type="button">get in touch</button>
     </section>
 
-    <div class="newsletter">
-        <form class="form" action="/" >
-            <div class="form__group">
-                <label class="form__label" for="">Newsletter Signup</label>
-                <input class="form__input" type="email" placeholder="test@youremail.com">
-                <button class="btn" type="submit">Signup</button>
-            </div>
-        </form>
+    <div class="newsletter ">
+        <div class="container">
+            <form class="form" action="/">
+                <div class="form__group">
+                    <div class="newsletter__left">
+                        <label class="form__label" for="#email">Newsletter Signup</label>
+                    </div>
+                    <div class="newsletter__right">
+                        <input class="form__input" id="#email" type="email" placeholder="test@youremail.com">
+                        <button class="btn" type="submit">Signup</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -203,8 +209,8 @@
                         <br>
                     </adress>
 
-                        <a class="footer__tel  footer__nav-link  footer__nav-link--sm" href="tel:+239942334022">+23 994 233 4022</a><br>
-                        <a class="footer__tel  footer__nav-link  footer__nav-link--sm" href="mailto:">info@konstruct.com</a>
+                        <a class="footer__nav-link  footer__nav-link--sm" href="tel:+239942334022">+23 994 233 4022</a><br>
+                        <a class="footer__nav-link  footer__nav-link--sm" href="mailto:">info@konstruct.com</a>
                 </div> <!-- /.footer__contacts -->
 
                 <div class="social">
