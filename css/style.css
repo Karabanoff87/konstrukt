@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+ul, li {
+    margin: 0;
+}
+
 *,
 *:before,
 *:after {
@@ -42,6 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header {
     margin: 0 auto;
+    height: 100vh;
 
 }
 
@@ -216,6 +221,8 @@ h1, h2, h3, h4, h5, h6, p {
 
     background-color: #000;
 
+    position: relative;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -225,18 +232,37 @@ h1, h2, h3, h4, h5, h6, p {
     height: auto;
 }
 
+.about__description {
+    font-family: 'Open Sans', cursive;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #fff;
+    text-transform: uppercase;
+
+
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
 /* Services */
+
+.services {
+    margin-bottom: 11.5em;
+}
 
 .services__header {
     margin-bottom: 8rem;
 
-    height: 10rem;
+    height: 4rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .services__title {
-    max-width: 200px;
-
+    width: 70rem;
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 0.128rem;
@@ -252,8 +278,229 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .services__text {
-    max-width: 400px;
+    margin-right: 3rem;
+
+    font-size: 1.1rem;
+    line-height: 1.72;
 }
+
+.btn {
+    padding: 1.1rem 2.9rem;
+	display: inline-block;
+	vertical-align: top;
+    min-height: 4rem;
+	min-width: 15rem;
+
+	font-family: inherit;
+	font-size: 1.3rem;
+	line-height: 1.1;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+
+	background-color: #00A4E5;
+	border: 0;
+
+	cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #40c0f3;
+    color: inherit;
+}
+
+.services__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__item {
+    padding: 4rem 2.5rem;
+    width: 29.5rem;
+
+    border: 1px solid #e6e6e6;
+}
+
+.services__icon {
+    margin-bottom: 2.5rem;
+}
+
+
+.services__subtitle {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: .43;
+    font-weight: 700;
+}
+
+.services__description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/* Connect */
+.connect {
+    padding-top: 12rem;
+    height: 495px;
+
+    text-align: center;
+    background: #fff url('../img/connect-bg.png') center no-repeat;
+}
+
+.connect__title {
+    margin-bottom: 3.5rem;
+
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    height: 10rem;
+
+    background-color: #000;
+
+}
+
+.form__group {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__label {
+    margin-right: 7rem;
+
+    display: inline-block;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .85px;
+}
+
+.form__input {
+    padding: 1rem 1.5rem;
+    height: 4rem;
+
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: #000;
+
+    border: 0;
+}
+
+.form__input:focus {
+    outline: 0;
+}
+
+/* Footer */
+
+.footer {
+    color: #fff;
+    background-color: #141A20;
+}
+
+.footer__content {
+    padding: 4rem 5rem;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__company {
+    width: 250px;
+}
+
+.footer__title {
+    margin-bottom: 2rem;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.footer__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.footer__row {
+    display: flex;
+
+}
+
+.footer__nav {
+    list-style: none;
+    margin-right: 3.4rem;
+}
+
+.footer__nav li {
+    margin-bottom: 1.3rem;
+}
+
+.footer__nav-link {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__nav-link:hover {
+    text-decoration: underline;
+}
+
+.footer__nav-link.footer__nav-link--sm {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.social {
+    width: 90px;
+    display: flex;
+    margin-top: 3.5rem;
+    justify-content: space-between;
+}
+
+.social__link {
+    text-decoration: none;
+
+    transition: all .2s linear;
+}
+
+.social__link:hover {
+    transform: translateY(-.3rem);
+}
+
+
+
+
+
+
+
+
 
 
 
