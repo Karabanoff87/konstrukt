@@ -552,7 +552,7 @@ ul, li {
 
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     .header__logo {
         margin-bottom: 160px;
     }
